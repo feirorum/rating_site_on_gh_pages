@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ratings Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="home">
+  <header>
+    <h1>Ratings Hub</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add.html">Add Item</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Latest Items</h2>
+      <p class="meta">Five most recently submitted items.</p>
+      <ul class="item-list" id="latestItems"></ul>
+    </section>
+    <section>
+      <h2>Top Rated</h2>
+      <p class="meta">Sorted by average rating, then number of ratings, then newest.</p>
+      <ul class="item-list" id="topItems"></ul>
+    </section>
+    <div id="homeError"></div>
+  </main>
+  <footer>
+    Powered by GitHub Issues &amp; Comments. Update <code>docs/config.js</code> with your repository info.
+  </footer>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
