@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add Item - Ratings Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="config.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </header>
+  <main class="add-page">
+    <h1>Add a New Item</h1>
+    <p>To add a new item to the ratings hub, you'll create a new GitHub issue using our template.</p>
+
+    <div class="card instructions">
+      <h2>How it works:</h2>
+      <ol>
+        <li>Click the button below to open the GitHub issue form</li>
+        <li>Fill in the item details:
+          <ul>
+            <li><strong>Title:</strong> A short, descriptive name</li>
+            <li><strong>Source URL:</strong> Link to the original content</li>
+            <li><strong>Thumbnail URL:</strong> Image URL (optional)</li>
+            <li><strong>Summary:</strong> Brief description</li>
+          </ul>
+        </li>
+        <li>Submit the issue</li>
+        <li>Your item will appear on the homepage!</li>
+      </ol>
+    </div>
+
+    <div class="button-group">
+      <a id="addItemBtn" class="button-primary large" target="_blank" rel="noopener">
+        Add Item on GitHub →
+      </a>
+    </div>
+
+    <script>
+      // Set the correct URL once config is loaded
+      window.addEventListener('DOMContentLoaded', () => {
+        const btn = document.getElementById('addItemBtn');
+        if (window.RH_CONFIG) {
+          btn.href = toNewIssueUrl();
+        }
+      });
+    </script>
+  </main>
+  <footer>
+    <p>Powered by GitHub Issues & Pages</p>
+  </footer>
+</body>
+</html>
