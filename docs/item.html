@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Item · Ratings Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="item">
+  <header>
+    <h1>Item Details</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add.html">Add Item</a>
+    </nav>
+  </header>
+  <main>
+    <section id="itemContainer">
+      <p class="meta">Loading item…</p>
+    </section>
+    <section class="comment-section">
+      <h2>Comments &amp; Ratings</h2>
+      <ul id="commentList"></ul>
+    </section>
+    <div id="itemError"></div>
+  </main>
+  <footer>
+    Ratings are recorded as GitHub comments using the <code>rating: n</code> prefix.
+  </footer>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

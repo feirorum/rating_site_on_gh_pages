@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Add Item · Ratings Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="add">
+  <header>
+    <h1>Submit a New Item</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="add.html">Add Item</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>How it works</h2>
+      <ol>
+        <li>Gather the source URL, a short summary, and (optional) thumbnail image URL.</li>
+        <li>Click the button below to open the GitHub issue template.</li>
+        <li>Fill in the fields and submit the issue. It will appear on the home page once created.</li>
+      </ol>
+      <p class="meta">Template path: <a id="issueTemplateLink" href="#">.github/ISSUE_TEMPLATE/item.yml</a></p>
+      <button id="openTemplate">Open issue template</button>
+    </section>
+    <section>
+      <h2>Tips</h2>
+      <ul>
+        <li>Keep the summary concise; it is shown on the home page.</li>
+        <li>If you have additional notes, place them below the front matter block in the issue body.</li>
+        <li>After others rate the item, encourage them to use the <code>rating: &lt;n&gt;</code> format so scores can be tallied.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    All submissions are stored as GitHub issues labeled <code>type:item</code>.
+  </footer>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
